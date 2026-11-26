@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 import { alertSuccess, alertError, confirmDialog } from "./alerts";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "http://3.145.207.146:8000/";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("token") || "");

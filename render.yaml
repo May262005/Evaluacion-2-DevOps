@@ -1,5 +1,4 @@
 services:
-  # 1. Backend FastAPI
   - type: web
     name: guitar-backend
     env: docker
@@ -11,18 +10,16 @@ services:
       - key: OPENOBSERVE_AUTH_HEADER
         value: Basic YWRtaW5AZ3VpdGFycy5jb206Q29tcGxleHBhc3MjMTIz
 
-  # 2. Frontend React (Vite)
   - type: web
     name: guitar-frontend
     env: docker
     dockerfilePath: Dockerfile.frontend
     autoDeploy: true
 
-  # 3. OpenObserve
   - type: web
     name: openobserve
     env: docker
-    image: public.ecr.aws/zinclabs/openobserve:latest
+    dockerfilePath: Dockerfile.openobserve
     autoDeploy: true
     envVars:
       - key: ZO_ROOT_USER_EMAIL
@@ -30,18 +27,16 @@ services:
       - key: ZO_ROOT_USER_PASSWORD
         value: Complexpass#123
 
-  # 4. Prometheus
   - type: web
     name: prometheus
     env: docker
-    image: prom/prometheus:latest
+    dockerfilePath: Dockerfile.prometheus
     autoDeploy: true
 
-  # 5. Grafana
   - type: web
     name: grafana
     env: docker
-    image: grafana/grafana:latest
+    dockerfilePath: Dockerfile.grafana
     autoDeploy: true
     envVars:
       - key: GF_SECURITY_ADMIN_USER
