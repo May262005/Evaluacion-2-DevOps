@@ -22,8 +22,8 @@ jobs:
 
       - name: Instalar dependencias de Python y Backend
         run: |
-          cd backend
           pip install -r requirements.txt
+          cd backend
           pip install pytest httpx
 
       - name: Ejecutar Pruebas de Backend (Pytest)
