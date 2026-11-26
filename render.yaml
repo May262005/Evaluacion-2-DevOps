@@ -22,7 +22,7 @@ services:
   - type: web
     name: openobserve
     env: docker
-    repo: public.ecr.aws/zinclabs/openobserve:latest
+    image: public.ecr.aws/zinclabs/openobserve:latest
     autoDeploy: true
     envVars:
       - key: ZO_ROOT_USER_EMAIL
@@ -34,14 +34,14 @@ services:
   - type: web
     name: prometheus
     env: docker
-    repo: prom/prometheus:latest
+    image: prom/prometheus:latest
     autoDeploy: true
 
   # 5. Grafana
   - type: web
     name: grafana
     env: docker
-    repo: grafana/grafana:latest
+    image: grafana/grafana:latest
     autoDeploy: true
     envVars:
       - key: GF_SECURITY_ADMIN_USER
