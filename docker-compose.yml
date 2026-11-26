@@ -60,6 +60,10 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=Complexpass#123
       - GF_SERVER_DOMAIN=3.145.207.146
       - GF_SERVER_ROOT_URL=http://3.145.207.146:3001/
+    deploy:
+      resources:
+        limits:
+          memory: 512M
     depends_on:
       - prometheus
 
