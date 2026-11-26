@@ -15,8 +15,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.frontend
-    ports:
-      - "80:80"
+    container_name: frontend # <-- 1. Agrega esto para que Nginx lo encuentre
+    # ports:                  # <-- 2. Quita o comenta los puertos del frontend
+    #   - "80:80"             # porque nginx-proxy ya se encarga del puerto 80
     depends_on:
       - backend
 
