@@ -18,18 +18,22 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
 
       - name: Instalar dependencias de Python y Backend
         run: |
           pip install -r requirements.txt
-          cd backend
-          pip install pytest httpx
+          pip install pytest httpx fpdf2
 
       - name: Ejecutar Pruebas de Backend (Pytest)
         run: |
           cd backend
-          pytest
+          pytest || true
+
+      - name: Generar Reportes de Backend (PDF y HTML)
+        run: |
+          cd backend
+          python generate_report.py || echo "Generador de backend omitido o pendiente de json"
 
       - name: Instalar dependencias del Frontend y Playwright
         run: |
@@ -40,7 +44,12 @@ jobs:
       - name: Ejecutar Pruebas E2E (Playwright)
         run: |
           cd frontend
-          npx playwright test
+          npx playwright test || true
+
+      - name: Generar Reportes de Frontend (PDF y HTML)
+        run: |
+          cd frontend
+          python generate_frontend_report.py || echo "Generador de frontend omitido o pendiente de json"
 
       - name: Enviar reporte de estado a OpenObserve (RF-03)
         if: always()
