@@ -33,7 +33,13 @@ jobs:
       - name: Generar Reportes de Backend (PDF y HTML)
         run: |
           cd backend
-          python generate_report.py || echo "Generador de backend omitido o pendiente de json"
+          python generate_report.py || echo "Generador backend omitido"
+
+      - name: Levantar servicios con Docker para Playwright
+        run: |
+          docker compose up --build -d
+          # Damos un momento para que los contenedores del backend y frontend estén arriba
+          sleep 15
 
       - name: Instalar dependencias del Frontend y Playwright
         run: |
@@ -49,7 +55,17 @@ jobs:
       - name: Generar Reportes de Frontend (PDF y HTML)
         run: |
           cd frontend
-          python generate_frontend_report.py || echo "Generador de frontend omitido o pendiente de json"
+          python generate_frontend_report.py || echo "Generador frontend omitido"
+
+      - name: Subir Reportes como Artefactos en GitHub
+        uses: actions/upload-artifact@v4
+        with:
+          name: reportes-de-pruebas-pdf-html
+          path: |
+            backend/reporte_pruebas.pdf
+            backend/reporte_pruebas.html
+            frontend/frontend_report.pdf
+            frontend/frontend_report.html
 
       - name: Enviar reporte de estado a OpenObserve (RF-03)
         if: always()

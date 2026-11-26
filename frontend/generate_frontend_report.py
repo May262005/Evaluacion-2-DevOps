@@ -2,15 +2,27 @@ import json
 import html
 from pathlib import Path
 from datetime import datetime
-
 from fpdf import FPDF
-
 
 # Rutas del proyecto
 BASE_DIR = Path(__file__).resolve().parent
 RESULTS_FILE = BASE_DIR / "reports" / "results.json"
 HTML_FILE = BASE_DIR / "frontend_report.html"
 PDF_FILE = BASE_DIR / "frontend_report.pdf"
+
+
+def safe_latin1(text):
+    """
+    Convierte un string a algo que la fuente core de fpdf2 (latin-1)
+    pueda dibujar. Caracteres especiales como '→' se reemplazan o limpian.
+    """
+    if text is None:
+        return ""
+    text = str(text)
+    try:
+        return text.encode("latin-1", errors="replace").decode("latin-1")
+    except Exception:
+        return "".join(c if ord(c) < 256 else "?" for c in text)
 
 
 def load_results():
@@ -28,11 +40,9 @@ def load_results():
 def get_test_status(test):
     """Obtiene el estado de un test a partir de sus resultados."""
     results = test.get("results", [])
-
     if not results:
         return "unknown"
 
-    # Si hay varios intentos, se toma el último resultado.
     result = results[-1]
     status = result.get("status", "unknown")
 
@@ -49,7 +59,6 @@ def get_test_status(test):
 def get_test_error(test):
     """Extrae el mensaje de error, si existe."""
     results = test.get("results", [])
-
     if not results:
         return ""
 
@@ -58,13 +67,11 @@ def get_test_error(test):
 
     if isinstance(error, dict):
         return error.get("message", "")
-
     if isinstance(error, str):
         return error
 
     errors = result.get("errors", [])
     messages = []
-
     for item in errors:
         if isinstance(item, dict):
             messages.append(item.get("message", ""))
@@ -77,10 +84,8 @@ def get_test_error(test):
 def get_test_duration(test):
     """Obtiene la duración total del test en milisegundos."""
     results = test.get("results", [])
-
     if not results:
         return 0
-
     return sum(result.get("duration", 0) for result in results)
 
 
@@ -111,7 +116,6 @@ def collect_tests(suites, parent_title=""):
                     "project": test.get("projectName", ""),
                 })
 
-        # Algunas versiones o configuraciones anidan suites.
         collected.extend(
             collect_tests(suite.get("suites", []), full_title)
         )
@@ -154,7 +158,6 @@ def build_html(data):
 
     for test in data["tests"]:
         status = test["status"]
-
         if status == "passed":
             status_label = "Aprobada"
         elif status == "failed":
@@ -187,209 +190,70 @@ def build_html(data):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reporte de pruebas frontend</title>
-
     <style>
-        * {{
-            box-sizing: border-box;
-        }}
-
-        body {{
-            margin: 0;
-            padding: 30px;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f3f6fb;
-            color: #1f2937;
-        }}
-
-        .container {{
-            max-width: 1400px;
-            margin: 0 auto;
-        }}
-
-        h1 {{
-            margin-bottom: 8px;
-            color: #1e3a8a;
-        }}
-
-        .generated {{
-            margin-bottom: 25px;
-            color: #64748b;
-        }}
-
-        .summary {{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 15px;
-            margin-bottom: 25px;
-        }}
-
-        .summary-card {{
-            padding: 20px;
-            border-radius: 10px;
-            background: white;
-            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
-        }}
-
-        .summary-card h2 {{
-            margin: 0 0 10px;
-            font-size: 14px;
-            color: #64748b;
-        }}
-
-        .summary-card p {{
-            margin: 0;
-            font-size: 28px;
-            font-weight: bold;
-        }}
-
-        .table-container {{
-            overflow-x: auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
-        }}
-
-        table {{
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 900px;
-        }}
-
-        th, td {{
-            padding: 12px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: left;
-            vertical-align: top;
-        }}
-
-        th {{
-            background: #1e3a8a;
-            color: white;
-        }}
-
-        .status {{
-            font-weight: bold;
-        }}
-
-        .passed {{
-            color: #15803d;
-        }}
-
-        .failed {{
-            color: #b91c1c;
-        }}
-
-        .skipped {{
-            color: #a16207;
-        }}
-
-        .unknown {{
-            color: #64748b;
-        }}
-
-        .error {{
-            max-width: 450px;
-            color: #b91c1c;
-            white-space: normal;
-            overflow-wrap: anywhere;
-        }}
-
-        @media (max-width: 600px) {{
-            body {{
-                padding: 15px;
-            }}
-        }}
+        body {{ margin: 0; padding: 30px; font-family: Arial, sans-serif; background: #f3f6fb; color: #1f2937; }}
+        .container {{ max-width: 1400px; margin: 0 auto; }}
+        h1 {{ margin-bottom: 8px; color: #1e3a8a; }}
+        .generated {{ margin-bottom: 25px; color: #64748b; }}
+        .summary {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 15px; margin-bottom: 25px; }}
+        .summary-card {{ padding: 20px; border-radius: 10px; background: white; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08); }}
+        .summary-card h2 {{ margin: 0 0 10px; font-size: 14px; color: #64748b; }}
+        .summary-card p {{ margin: 0; font-size: 28px; font-weight: bold; }}
+        .table-container {{ overflow-x: auto; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08); }}
+        table {{ width: 100%; border-collapse: collapse; min-width: 900px; }}
+        th, td {{ padding: 12px; border-bottom: 1px solid #e5e7eb; text-align: left; vertical-align: top; }}
+        th {{ background: #1e3a8a; color: white; }}
+        .passed {{ color: #15803d; font-weight: bold; }}
+        .failed {{ color: #b91c1c; font-weight: bold; }}
+        .skipped {{ color: #a16207; font-weight: bold; }}
+        .error {{ max-width: 450px; color: #b91c1c; overflow-wrap: anywhere; }}
     </style>
 </head>
-
 <body>
     <main class="container">
         <h1>Reporte de pruebas frontend</h1>
         <p class="generated">Generado: {html.escape(data["generated_at"])}</p>
-
         <section class="summary">
-            <div class="summary-card">
-                <h2>Total de pruebas</h2>
-                <p>{data["total"]}</p>
-            </div>
-
-            <div class="summary-card">
-                <h2>Aprobadas</h2>
-                <p class="passed">{data["passed"]}</p>
-            </div>
-
-            <div class="summary-card">
-                <h2>Fallidas</h2>
-                <p class="failed">{data["failed"]}</p>
-            </div>
-
-            <div class="summary-card">
-                <h2>Omitidas</h2>
-                <p class="skipped">{data["skipped"]}</p>
-            </div>
-
-            <div class="summary-card">
-                <h2>Porcentaje de aprobación</h2>
-                <p>{data["pass_rate"]:.2f}%</p>
-            </div>
-
-            <div class="summary-card">
-                <h2>Duración total</h2>
-                <p>{data["duration"] / 1000:.2f} s</p>
-            </div>
+            <div class="summary-card"><h2>Total</h2><p>{data["total"]}</p></div>
+            <div class="summary-card"><h2>Aprobadas</h2><p class="passed">{data["passed"]}</p></div>
+            <div class="summary-card"><h2>Fallidas</h2><p class="failed">{data["failed"]}</p></div>
+            <div class="summary-card"><h2>Omitidas</h2><p class="skipped">{data["skipped"]}</p></div>
+            <div class="summary-card"><h2>Aprobación</h2><p>{data["pass_rate"]:.2f}%</p></div>
+            <div class="summary-card"><h2>Duración</h2><p>{data["duration"] / 1000:.2f} s</p></div>
         </section>
-
         <section class="table-container">
             <table>
                 <thead>
-                    <tr>
-                        <th>Prueba</th>
-                        <th>Suite</th>
-                        <th>Archivo</th>
-                        <th>Estado</th>
-                        <th>Duración</th>
-                        <th>Error</th>
-                    </tr>
+                    <tr><th>Prueba</th><th>Suite</th><th>Archivo</th><th>Estado</th><th>Duración</th><th>Error</th></tr>
                 </thead>
-
-                <tbody>
-                    {tests_rows}
-                </tbody>
+                <tbody>{tests_rows}</tbody>
             </table>
         </section>
     </main>
 </body>
-</html>
-"""
+</html>"""
 
     HTML_FILE.write_text(document, encoding="utf-8")
     print(f"Reporte HTML generado: {HTML_FILE}")
 
 
 def build_pdf(data):
-    """Genera el reporte PDF."""
+    """Genera el reporte PDF usando safe_latin1 para evitar errores con caracteres especiales."""
     pdf = FPDF(orientation="L", format="A4")
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.set_margins(10, 10, 10)
 
     pdf.add_page()
-    pdf.set_font("Arial", "B", 18)
+    pdf.set_font("Helvetica", "B", 18)
     pdf.set_text_color(30, 58, 138)
-    pdf.cell(0, 12, "Reporte de pruebas frontend", new_x="LMARGIN", new_y="NEXT")
+    pdf.cell(0, 12, safe_latin1("Reporte de pruebas frontend"), new_x="LMARGIN", new_y="NEXT")
 
-    pdf.set_font("Arial", "", 10)
+    pdf.set_font("Helvetica", "", 10)
     pdf.set_text_color(60, 60, 60)
-    pdf.cell(
-        0,
-        7,
-        f"Generado: {data['generated_at']}",
-        new_x="LMARGIN",
-        new_y="NEXT",
-    )
+    pdf.cell(0, 7, safe_latin1(f"Generado: {data['generated_at']}"), new_x="LMARGIN", new_y="NEXT")
 
     pdf.ln(4)
-    pdf.set_font("Arial", "B", 11)
-
+    pdf.set_font("Helvetica", "B", 11)
     pdf.cell(45, 7, f"Total: {data['total']}")
     pdf.cell(45, 7, f"Aprobadas: {data['passed']}")
     pdf.cell(45, 7, f"Fallidas: {data['failed']}")
@@ -397,42 +261,27 @@ def build_pdf(data):
     pdf.cell(45, 7, f"Aprobación: {data['pass_rate']:.2f}%")
     pdf.ln(7)
 
-    pdf.cell(
-        0,
-        7,
-        f"Duración total: {data['duration'] / 1000:.2f} segundos",
-        new_x="LMARGIN",
-        new_y="NEXT",
-    )
+    pdf.cell(0, 7, safe_latin1(f"Duración total: {data['duration'] / 1000:.2f} segundos"), new_x="LMARGIN", new_y="NEXT")
     pdf.ln(5)
 
-    # Encabezados de la tabla
     widths = [55, 55, 45, 25, 25, 72]
     headers = ["Prueba", "Suite", "Archivo", "Estado", "Duración", "Error"]
 
-    pdf.set_font("Arial", "B", 8)
+    pdf.set_font("Helvetica", "B", 8)
     pdf.set_fill_color(30, 58, 138)
     pdf.set_text_color(255, 255, 255)
 
     for header, width in zip(headers, widths):
-        pdf.cell(width, 8, header, border=1, fill=True)
+        pdf.cell(width, 8, safe_latin1(header), border=1, fill=True)
 
     pdf.ln()
 
-    pdf.set_font("Arial", "", 7)
+    pdf.set_font("Helvetica", "", 7)
     pdf.set_text_color(30, 30, 30)
 
     for test in data["tests"]:
         status = test["status"]
-
-        if status == "passed":
-            status_label = "Aprobada"
-        elif status == "failed":
-            status_label = "Fallida"
-        elif status == "skipped":
-            status_label = "Omitida"
-        else:
-            status_label = "Desconocido"
+        status_label = "Aprobada" if status == "passed" else "Fallida" if status == "failed" else "Omitida" if status == "skipped" else "Desconocido"
 
         values = [
             test["title"],
@@ -443,9 +292,8 @@ def build_pdf(data):
             test["error"],
         ]
 
-        # Limita la longitud para que las celdas no se desborden.
         values = [
-            str(value).replace("\n", " ")[:250]
+            safe_latin1(str(value).replace("\n", " ")[:250])
             for value in values
         ]
 
@@ -460,13 +308,10 @@ def build_pdf(data):
 
 def main():
     print("Leyendo resultados de Playwright...")
-
     raw_data = load_results()
     data = parse_playwright_results(raw_data)
-
     build_html(data)
     build_pdf(data)
-
     print("Reportes generados correctamente.")
 
 
