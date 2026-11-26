@@ -13,12 +13,10 @@ services:
 
   frontend:
     build:
-      context: .
+      context: ./frontend
       dockerfile: Dockerfile.frontend
-    container_name: guitar-frontend
-    restart: always
-    expose:
-      - "80"
+    ports:
+      - "80:80"
     depends_on:
       - backend
 
