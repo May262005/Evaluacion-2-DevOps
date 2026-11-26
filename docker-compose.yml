@@ -58,6 +58,8 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=Complexpass#123
+      - GF_SERVER_DOMAIN=3.145.207.146
+      - GF_SERVER_ROOT_URL=http://3.145.207.146:3001/
     depends_on:
       - prometheus
 
