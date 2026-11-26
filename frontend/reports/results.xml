@@ -1,0 +1,2072 @@
+<testsuites id="" name="" tests="517" failures="0" skipped="517" errors="0" time="0.1725290000000001">
+<testsuite name="tests.spec.ts" timestamp="2026-11-26T04:00:28.154Z" hostname="chromium" tests="517" failures="0" skipped="517" time="0" errors="0">
+<testcase name="AUTH login exitoso con usuario y contraseña válidos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario recién registrado" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene números" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene guion bajo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene punto" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene formato email" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario en mayúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario de un solo carácter" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario de 50 caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña numérica" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña mixta (letras y números)" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña de símbolos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña de 72 caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña de un solo carácter" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene ñ" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene acentos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene espacio interno" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene guiones" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña con mayúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña con espacios internos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso tras cerrar y volver a abrir el navegador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene emojis rechazados" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que termina en número" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que empieza con letra" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene dígitos al final" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario alfanumérico largo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña alfanumérica larga" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario sin caracteres especiales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña sin caracteres especiales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene solo letras" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña que contiene solo números" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene solo números" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña que contiene solo letras" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene guion medio" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene guion bajo al final" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña que contiene guion bajo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña que contiene punto" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene arroba" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña que contiene arroba" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene signo pesos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña que contiene signo pesos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene porcentaje" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña que contiene porcentaje" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene ampersand" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña que contiene ampersand" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene paréntesis" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña que contiene paréntesis" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene corchetes" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con contraseña que contiene corchetes" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login exitoso con usuario que contiene almohadilla" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña incorrecta" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario y contraseña incorrectos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario vacío" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña vacía" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con ambos campos vacíos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene solo espacios" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña que contiene solo espacios" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario en mayúsculas cuando el real está en minúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña en mayúsculas cuando la real está en minúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario con espacio al final" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario con espacio al inicio" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña con espacio al final" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña con espacio al inicio" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario con salto de línea" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña con salto de línea" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario de 500 caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña de 500 caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene solo números inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña numérica incorrecta" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene ñ inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene acentos inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene punto inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene guion inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene arroba inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene ampersand inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene porcentaje inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña que contiene signos inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene paréntesis inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña que contiene corchetes inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene almohadilla inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene emoji inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña que contiene emoji inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene tabulación inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña que contiene tabulación inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene solo emojis inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña que contiene solo emojis inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene comillas inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con contraseña que contiene comillas inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH login rechazado con usuario que contiene backslash inexistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario y contraseña válidos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario único generado dinámicamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene números" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene guion bajo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene punto" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene formato email" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario en mayúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario de un solo carácter" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario de 50 caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña numérica" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña mixta" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña de símbolos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña de 72 caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña de un solo carácter" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene ñ" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene acentos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene espacio interno" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene guiones" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña con mayúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña con espacios internos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene arroba" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña que contiene arroba" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene signo pesos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña que contiene signo pesos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene porcentaje" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña que contiene porcentaje" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene ampersand" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña que contiene ampersand" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con usuario que contiene paréntesis" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH registro exitoso con contraseña que contiene paréntesis" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login con usuario numérico" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login con usuario con guion" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login con usuario con punto" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login con usuario en mayúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login con contraseña numérica" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login con contraseña mixta" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login con contraseña larga" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login con usuario de un carácter" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login con usuario largo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login tras recargar la página" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login tras navegar entre vistas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login tras cambiar vista a usuarios" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login tras crear una guitarra" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login tras editar una guitarra" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login tras eliminar una guitarra" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login con sesión persistente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login en pestaña nueva" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login tras dos logins consecutivos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH logout después de login tras tres logins consecutivos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH sesión persiste tras recargar la página principal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH sesión persiste tras recargar la página de guitarras" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH sesión persiste tras recargar la página de usuarios" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH sesión persiste tras recargar dos veces seguidas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH sesión persiste tras navegar a guitarras y volver" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH sesión persiste tras navegar a usuarios y volver" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH sesión persiste tras crear una guitarra y recargar" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH sesión persiste tras editar una guitarra y recargar" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH sesión persiste tras eliminar una guitarra y recargar" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH sesión persiste tras abrir y cerrar el modal de nueva guitarra" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH cambio entre login y registro de login a registro y vuelta" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH cambio entre login y registro de registro a login y vuelta" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH cambio entre login y registro múltiples veces consecutivas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH cambio entre login y registro con campos llenos antes de cambiar" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH cambio entre login y registro con campos vacíos al cambiar" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH cambio entre login y registro tras intento de login fallido" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH cambio entre login y registro tras intento de registro fallido" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH cambio entre login y registro con usuario lleno y contraseña vacía" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH cambio entre login y registro con usuario vacío y contraseña llena" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="AUTH cambio entre login y registro con ambos campos llenos y cambio de modo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Fender Stratocaster" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Gibson Les Paul" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Yamaha F310" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Ibanez RG550" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Taylor 214ce" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Martin D-28" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Epiphone SG Special" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Squier Affinity Strat" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra PRS SE Custom 24" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Gretsch G5420T" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Jackson JS22 DKA" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra ESP LTD EC-1000" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Schecter Omen-6" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Dean ML X" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra B.C. Rich Warlock" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Cordoba C5" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Ovation Celebrity" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Godin Session" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Guild D-20" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Larrivée D-03" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Fender Telecaster" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Gibson SG Standard" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Yamaha FG800" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Ibanez AZ2402" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Taylor GS Mini" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Martin HD-28" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Epiphone Les Paul Standard" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Squier Classic Vibe" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra PRS Silver Sky" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Gretsch White Falcon" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Jackson Soloist SL2" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra ESP Horizon NT" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Schecter C-1 Platinum" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Dean Dimebag" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra B.C. Rich Mockingbird" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Cordoba C7" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Ovation Adamas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Godin Multiac" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Guild D-55" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Larrivée OM-03" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Fender Jazzmaster" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Gibson Flying V" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Yamaha APX600" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Ibanez Artcore" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Taylor 814ce" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Martin 000-28" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Epiphone Sheraton II" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Squier Jaguar" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra PRS Custom 24" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS crear guitarra Gretsch Country Gentleman" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS verificar vista de guitarras al iniciar sesión" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS verificar vista de guitarras en iteración 1" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS verificar vista de guitarras en iteración 2" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS verificar vista de guitarras en iteración 3" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS verificar vista de guitarras en iteración 4" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS verificar vista de guitarras en iteración 5" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS verificar vista de guitarras en iteración 6" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS verificar vista de guitarras en iteración 7" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS verificar vista de guitarras en iteración 8" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS verificar vista de guitarras en iteración 9" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #0" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #1" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #2" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #3" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #4" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #5" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #6" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #7" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #8" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #9" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #10" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #11" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #12" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #13" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #14" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #15" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #16" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #17" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #18" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #19" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #20" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #21" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #22" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #23" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #24" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #25" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #26" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #27" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #28" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS editar guitarra cambiando marca y modelo #29" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #0" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #1" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #2" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #3" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #4" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #5" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #6" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #7" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #8" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #9" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #10" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #11" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #12" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #13" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #14" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #15" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #16" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #17" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #18" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #19" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #20" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #21" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #22" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #23" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #24" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #25" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #26" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #27" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #28" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS eliminar guitarra confirmando el diálogo #29" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS cancelar creación de guitarra #0" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS cancelar creación de guitarra #1" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS cancelar creación de guitarra #2" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS cancelar creación de guitarra #3" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS cancelar creación de guitarra #4" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS cancelar eliminación de guitarra #0" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS cancelar eliminación de guitarra #1" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS cancelar eliminación de guitarra #2" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS cancelar eliminación de guitarra #3" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GUITARS › GUITARS cancelar eliminación de guitarra #4" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con solo el usuario administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con un usuario adicional" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con dos usuarios adicionales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con tres usuarios adicionales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con cinco usuarios adicionales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con diez usuarios adicionales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con quince usuarios adicionales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con veinte usuarios adicionales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con treinta usuarios adicionales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con cincuenta usuarios adicionales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios después de crear un usuario" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios después de editar un usuario" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios después de eliminar un usuario" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios después de recargar la página" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios después de navegar a guitarras y volver" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con usuarios que contienen guion bajo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con usuarios que contienen punto" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con usuarios que contienen números" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con usuarios que contienen mayúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS admin lista usuarios con usuarios que contienen acentos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario vendedor01 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario vendedor02 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario cliente01 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario cliente02 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario admin02 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario usuario_con_guion como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario usuario.con.punto como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario usuario@mail.com como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario UsuarioMayus como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario usuario_ñ como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user123 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user456 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user789 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario a como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario ab como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario abc como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario vendedor03 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario vendedor04 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario cliente03 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario cliente04 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario admin03 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario admin04 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario tester01 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario tester02 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario tester03 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario invitado01 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario invitado02 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario invitado03 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario invitado04 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario invitado05 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario cliente_con_guion como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario cliente.con.punto como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario cliente@mail.com como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario ClienteMayus como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario cliente_ñ como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user000 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user001 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user002 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user003 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user004 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario vendedor_con_guion como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario vendedor.con.punto como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario vendedor@mail.com como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario VendedorMayus como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario vendedor_ñ como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user005 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user006 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user007 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user008 como administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS crear usuario user009 como usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol a administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol a usuario normal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol dos veces" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol sin tocar username" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol sin tocar password" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol con username existente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol con username nuevo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol con password nuevo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol con username y password nuevos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol dejando password vacío" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario con guion bajo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario con punto" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario con arroba" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario en mayúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario con acentos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario numérico" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario de un carácter" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario de dos caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario de tres caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario largo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol tras recargar la página" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol tras navegar a guitarras" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol dos veces seguidas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol tras crear otro usuario" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol tras eliminar otro usuario" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario con contraseña larga" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario con contraseña numérica" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario con contraseña mixta" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario con contraseña con símbolos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS editar usuario cambiar rol de usuario con contraseña con guion bajo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario recién creado" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario no administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario con guion bajo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario con punto" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario con arroba" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario en mayúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario con acentos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario numérico" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario de un carácter" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario de dos caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario de tres caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario largo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario creado tras otro" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario creado antes de otro" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario tras recargar la página" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario tras navegar a guitarras" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario con contraseña larga" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario con contraseña numérica" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario con contraseña mixta" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="USERS › USERS eliminar usuario con contraseña con símbolos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin marca con todos los campos vacíos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin marca con modelo y precio llenos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin marca con solo precio lleno" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin marca con solo modelo lleno" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin marca con marca vacía tras escribir y borrar" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin marca con marca con solo espacios" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin marca con marca con tabulación" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin marca con marca con salto de línea" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin marca con marca con emoji" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin marca con marca con números" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin modelo con marca llena y precio vacío" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin modelo con marca y precio llenos pero modelo vacío" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin modelo con modelo con solo espacios" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin modelo con modelo con tabulación" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin modelo con modelo con salto de línea" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin modelo con modelo con emoji" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin modelo con modelo con números" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin modelo con modelo que se borra tras escribir" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin modelo con modelo de solo un carácter" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra sin modelo con modelo de 100 caracteres" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con acentos españoles" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con ampersand" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con apóstrofe" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con paréntesis" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con numeral" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con diéresis" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con eñe" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con acento agudo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con acento grave" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con circunflejo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con tilde" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con cedilla" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con guion" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con guion bajo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con punto" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con coma" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con punto y coma" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con dos puntos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con signo de exclamación" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con signo de interrogación" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con comillas simples" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con comillas dobles" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con corchetes" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con llaves" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con barra vertical" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con asterisco" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con signo de porcentaje" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con signo de pesos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con arroba" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra marca con almohadilla" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio 0.01 (mínimo válido)" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio 0.001 (sub-centavo)" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio 999.99" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio 1000.00" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio 999999.99" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio 1000000.00" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio 1.5" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio 1234.5678" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio -1 (negativo rechazado)" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio -100 (negativo rechazado)" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio 0 (rechazado)" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio 0.00 (rechazado)" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio muy pequeño" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio muy grande" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio con un decimal" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio con dos decimales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio con cuatro decimales" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio entero" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio con coma en vez de punto" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="VALIDATIONS › VALIDATIONS crear guitarra con precio que contiene letras" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 1 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 2 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 3 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 5 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 10 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 20 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 30 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 50 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 75 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 100 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 150 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES listar 200 guitarras correctamente" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que el admin ve la pestaña Usuarios con un usuario administrador" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que el admin ve la pestaña Usuarios con dos administradores" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que el admin ve la pestaña Usuarios con tres administradores" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que el admin ve la pestaña Usuarios con cinco administradores" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que el admin ve la pestaña Usuarios con diez administradores" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con un vendedor" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con dos vendedores" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con tres vendedores" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con cinco vendedores" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con diez vendedores" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con vendedor que contiene guion bajo" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con vendedor que contiene punto" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con vendedor que contiene números" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con vendedor en mayúsculas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con vendedor que contiene acentos" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES flujo completo: crear una guitarra y verificar que aparece" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES flujo completo: editar una guitarra y verificar el cambio" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES flujo completo: eliminar una guitarra y verificar que desaparece" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES flujo completo: crear dos guitarras y verificar que aparecen" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES flujo completo: crear y luego editar la misma guitarra" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES flujo completo: crear y luego eliminar la misma guitarra" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES flujo completo: crear y luego editar y luego eliminar" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES flujo completo: crear varias y eliminar una" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES flujo completo: crear varias y editar una" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="EDGE_CASES › EDGE_CASES flujo completo: crear varias y eliminar todas" classname="tests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,5348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de pruebas frontend</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f6fb;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .generated {
+            margin-bottom: 25px;
+            color: #64748b;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .summary-card {
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+        }
+
+        .summary-card h2 {
+            margin: 0 0 10px;
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .summary-card p {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 900px;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #1e3a8a;
+            color: white;
+        }
+
+        .status {
+            font-weight: bold;
+        }
+
+        .passed {
+            color: #15803d;
+        }
+
+        .failed {
+            color: #b91c1c;
+        }
+
+        .skipped {
+            color: #a16207;
+        }
+
+        .unknown {
+            color: #64748b;
+        }
+
+        .error {
+            max-width: 450px;
+            color: #b91c1c;
+            white-space: normal;
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Reporte de pruebas frontend</h1>
+        <p class="generated">Generado: 25/11/2026 23:49:02</p>
+
+        <section class="summary">
+            <div class="summary-card">
+                <h2>Total de pruebas</h2>
+                <p>517</p>
+            </div>
+
+            <div class="summary-card">
+                <h2>Aprobadas</h2>
+                <p class="passed">517</p>
+            </div>
+
+            <div class="summary-card">
+                <h2>Fallidas</h2>
+                <p class="failed">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h2>Omitidas</h2>
+                <p class="skipped">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h2>Porcentaje de aprobación</h2>
+                <p>100.00%</p>
+            </div>
+
+            <div class="summary-card">
+                <h2>Duración total</h2>
+                <p>1914.40 s</p>
+            </div>
+        </section>
+
+        <section class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prueba</th>
+                        <th>Suite</th>
+                        <th>Archivo</th>
+                        <th>Estado</th>
+                        <th>Duración</th>
+                        <th>Error</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+            <tr>
+                <td>AUTH login exitoso con usuario y contraseña válidos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3786 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario recién registrado</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2024 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene números</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1941 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene guion bajo</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1889 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene punto</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1791 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene formato email</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1824 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario en mayúsculas</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2043 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario de un solo carácter</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2185 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario de 50 caracteres</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2208 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña numérica</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1932 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña mixta (letras y números)</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1886 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña de símbolos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1931 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña de 72 caracteres</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1916 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña de un solo carácter</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1864 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene ñ</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1887 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene acentos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1997 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene espacio interno</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1975 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene guiones</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2039 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña con mayúsculas</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2121 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña con espacios internos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2069 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso tras cerrar y volver a abrir el navegador</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1936 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene emojis rechazados</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1948 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que termina en número</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1861 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que empieza con letra</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1913 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene dígitos al final</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1901 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario alfanumérico largo</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1931 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña alfanumérica larga</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1922 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario sin caracteres especiales</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1944 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña sin caracteres especiales</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1858 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene solo letras</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1976 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña que contiene solo números</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1964 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene solo números</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2003 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña que contiene solo letras</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2067 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene guion medio</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2034 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene guion bajo al final</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1860 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña que contiene guion bajo</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1969 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña que contiene punto</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2060 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene arroba</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2113 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña que contiene arroba</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1941 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene signo pesos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1960 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña que contiene signo pesos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2168 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene porcentaje</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2167 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña que contiene porcentaje</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2052 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene ampersand</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2079 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña que contiene ampersand</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1925 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene paréntesis</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2061 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña que contiene paréntesis</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1938 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene corchetes</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1916 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con contraseña que contiene corchetes</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2078 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login exitoso con usuario que contiene almohadilla</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1919 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1879 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña incorrecta</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1744 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario y contraseña incorrectos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1785 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario vacío</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1753 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña vacía</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1757 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con ambos campos vacíos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1763 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene solo espacios</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1763 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña que contiene solo espacios</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1701 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario en mayúsculas cuando el real está en minúsculas</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1712 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña en mayúsculas cuando la real está en minúsculas</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1779 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario con espacio al final</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1726 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario con espacio al inicio</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1990 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña con espacio al final</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1923 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña con espacio al inicio</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1798 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario con salto de línea</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1802 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña con salto de línea</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1842 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario de 500 caracteres</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1780 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña de 500 caracteres</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2254 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene solo números inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1887 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña numérica incorrecta</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1940 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene ñ inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2050 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene acentos inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1910 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene punto inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1527 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene guion inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1765 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene arroba inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1676 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene ampersand inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1691 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene porcentaje inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1498 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña que contiene signos inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1522 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene paréntesis inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1545 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña que contiene corchetes inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1528 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene almohadilla inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1825 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene emoji inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1782 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña que contiene emoji inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1757 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene tabulación inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1950 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña que contiene tabulación inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2082 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene solo emojis inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1850 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña que contiene solo emojis inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1756 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene comillas inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1888 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con contraseña que contiene comillas inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1862 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH login rechazado con usuario que contiene backslash inexistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1922 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario y contraseña válidos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1865 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario único generado dinámicamente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1754 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene números</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1671 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene guion bajo</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1708 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene punto</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1621 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene formato email</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1635 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario en mayúsculas</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1673 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario de un solo carácter</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1685 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario de 50 caracteres</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1677 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña numérica</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1653 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña mixta</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1619 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña de símbolos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1701 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña de 72 caracteres</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1655 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña de un solo carácter</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1861 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene ñ</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1747 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene acentos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1700 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene espacio interno</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1710 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene guiones</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1834 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña con mayúsculas</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1963 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña con espacios internos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1678 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene arroba</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1759 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña que contiene arroba</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1714 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene signo pesos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1663 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña que contiene signo pesos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1599 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene porcentaje</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1716 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña que contiene porcentaje</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1790 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene ampersand</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1697 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña que contiene ampersand</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1662 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con usuario que contiene paréntesis</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1731 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH registro exitoso con contraseña que contiene paréntesis</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1810 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login normal</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2014 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login con usuario numérico</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2017 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login con usuario con guion</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1996 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login con usuario con punto</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2026 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login con usuario en mayúsculas</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2068 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login con contraseña numérica</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1922 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login con contraseña mixta</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1912 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login con contraseña larga</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1993 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login con usuario de un carácter</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2212 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login con usuario largo</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1929 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login tras recargar la página</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2076 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login tras navegar entre vistas</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1950 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login tras cambiar vista a usuarios</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1975 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login tras crear una guitarra</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1935 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login tras editar una guitarra</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1939 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login tras eliminar una guitarra</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2076 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login con sesión persistente</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1980 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login en pestaña nueva</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1945 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login tras dos logins consecutivos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>1994 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH logout después de login tras tres logins consecutivos</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2100 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH sesión persiste tras recargar la página principal</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2077 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH sesión persiste tras recargar la página de guitarras</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2034 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH sesión persiste tras recargar la página de usuarios</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2174 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH sesión persiste tras recargar dos veces seguidas</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2267 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH sesión persiste tras navegar a guitarras y volver</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2172 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH sesión persiste tras navegar a usuarios y volver</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2177 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH sesión persiste tras crear una guitarra y recargar</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2099 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH sesión persiste tras editar una guitarra y recargar</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2009 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH sesión persiste tras eliminar una guitarra y recargar</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2054 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH sesión persiste tras abrir y cerrar el modal de nueva guitarra</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2048 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH cambio entre login y registro de login a registro y vuelta</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>503 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH cambio entre login y registro de registro a login y vuelta</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>586 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH cambio entre login y registro múltiples veces consecutivas</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>497 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH cambio entre login y registro con campos llenos antes de cambiar</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>595 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH cambio entre login y registro con campos vacíos al cambiar</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>550 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH cambio entre login y registro tras intento de login fallido</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>582 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH cambio entre login y registro tras intento de registro fallido</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>551 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH cambio entre login y registro con usuario lleno y contraseña vacía</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>634 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH cambio entre login y registro con usuario vacío y contraseña llena</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>572 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>AUTH cambio entre login y registro con ambos campos llenos y cambio de modo</td>
+                <td>tests.spec.ts</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>566 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Fender Stratocaster</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3368 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Gibson Les Paul</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3336 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Yamaha F310</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3350 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Ibanez RG550</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3471 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Taylor 214ce</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3297 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Martin D-28</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3373 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Epiphone SG Special</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3276 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Squier Affinity Strat</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3281 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra PRS SE Custom 24</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3451 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Gretsch G5420T</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3334 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Jackson JS22 DKA</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3526 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra ESP LTD EC-1000</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3388 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Schecter Omen-6</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3281 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Dean ML X</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3567 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra B.C. Rich Warlock</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3224 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Cordoba C5</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3329 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Ovation Celebrity</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3504 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Godin Session</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3319 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Guild D-20</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3347 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Larrivée D-03</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3340 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Fender Telecaster</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3328 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Gibson SG Standard</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3304 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Yamaha FG800</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3323 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Ibanez AZ2402</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3290 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Taylor GS Mini</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3276 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Martin HD-28</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3327 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Epiphone Les Paul Standard</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3235 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Squier Classic Vibe</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3027 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra PRS Silver Sky</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3080 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Gretsch White Falcon</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3276 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Jackson Soloist SL2</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3185 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra ESP Horizon NT</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3256 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Schecter C-1 Platinum</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3263 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Dean Dimebag</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3185 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra B.C. Rich Mockingbird</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3193 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Cordoba C7</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2860 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Ovation Adamas</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2386 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Godin Multiac</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2938 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Guild D-55</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3510 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Larrivée OM-03</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3359 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Fender Jazzmaster</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3281 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Gibson Flying V</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3292 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Yamaha APX600</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3266 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Ibanez Artcore</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3262 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Taylor 814ce</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3142 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Martin 000-28</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3222 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Epiphone Sheraton II</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3236 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Squier Jaguar</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3190 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra PRS Custom 24</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3405 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS crear guitarra Gretsch Country Gentleman</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3292 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS verificar vista de guitarras al iniciar sesión</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2445 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS verificar vista de guitarras en iteración 1</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2379 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS verificar vista de guitarras en iteración 2</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2378 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS verificar vista de guitarras en iteración 3</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2538 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS verificar vista de guitarras en iteración 4</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2402 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS verificar vista de guitarras en iteración 5</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2385 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS verificar vista de guitarras en iteración 6</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2544 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS verificar vista de guitarras en iteración 7</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2423 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS verificar vista de guitarras en iteración 8</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2465 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS verificar vista de guitarras en iteración 9</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2432 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #0</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3998 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #1</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4267 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #2</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4043 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #3</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4233 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #4</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4047 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #5</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4229 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #6</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3890 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #7</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4001 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #8</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4087 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #9</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3982 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #10</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4081 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #11</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4368 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #12</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4171 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #13</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4353 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #14</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4012 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #15</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4028 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #16</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4011 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #17</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4278 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #18</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4872 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #19</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4387 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #20</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4073 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #21</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4171 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #22</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4151 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #23</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4080 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #24</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4154 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #25</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4306 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #26</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4172 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #27</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4007 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #28</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4112 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS editar guitarra cambiando marca y modelo #29</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4182 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #0</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>19118 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #1</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3884 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #2</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4122 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #3</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3681 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #4</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>20090 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #5</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4736 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #6</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4403 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #7</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>7056 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #8</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4567 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #9</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>7292 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #10</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5256 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #11</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4505 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #12</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4631 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #13</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>6158 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #14</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5230 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #15</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5876 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #16</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>22433 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #17</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5653 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #18</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4562 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #19</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5388 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #20</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>10042 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #21</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5117 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #22</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4990 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #23</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4507 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #24</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4099 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #25</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4589 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #26</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5045 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #27</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>20661 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #28</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4631 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS eliminar guitarra confirmando el diálogo #29</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4394 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS cancelar creación de guitarra #0</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3027 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS cancelar creación de guitarra #1</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3079 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS cancelar creación de guitarra #2</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3084 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS cancelar creación de guitarra #3</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2840 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS cancelar creación de guitarra #4</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2725 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS cancelar eliminación de guitarra #0</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3818 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS cancelar eliminación de guitarra #1</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4085 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS cancelar eliminación de guitarra #2</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3588 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS cancelar eliminación de guitarra #3</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3722 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>GUITARS cancelar eliminación de guitarra #4</td>
+                <td>tests.spec.ts &gt; GUITARS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3975 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con solo el usuario administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>13617 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con un usuario adicional</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3164 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con dos usuarios adicionales</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2835 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con tres usuarios adicionales</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2712 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con cinco usuarios adicionales</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2639 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con diez usuarios adicionales</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2737 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con quince usuarios adicionales</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2801 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con veinte usuarios adicionales</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3022 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con treinta usuarios adicionales</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2614 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con cincuenta usuarios adicionales</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2748 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios después de crear un usuario</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2577 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios después de editar un usuario</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2643 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios después de eliminar un usuario</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2671 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios después de recargar la página</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2802 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios después de navegar a guitarras y volver</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2682 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con usuarios que contienen guion bajo</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2678 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con usuarios que contienen punto</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2602 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con usuarios que contienen números</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2778 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con usuarios que contienen mayúsculas</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2715 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS admin lista usuarios con usuarios que contienen acentos</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2895 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario vendedor01 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4589 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario vendedor02 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4287 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario cliente01 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4623 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario cliente02 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4309 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario admin02 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4445 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario usuario_con_guion como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4060 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario usuario.con.punto como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4204 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario usuario@mail.com como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4185 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario UsuarioMayus como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4201 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario usuario_ñ como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4188 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user123 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4298 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user456 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4177 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user789 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5635 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario a como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4392 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario ab como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5524 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario abc como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4697 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario vendedor03 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4344 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario vendedor04 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4539 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario cliente03 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4368 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario cliente04 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4187 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario admin03 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4235 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario admin04 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4051 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario tester01 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4496 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario tester02 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4573 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario tester03 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4727 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario invitado01 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>6604 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario invitado02 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4783 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario invitado03 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4780 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario invitado04 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>7723 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario invitado05 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>19855 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario cliente_con_guion como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4728 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario cliente.con.punto como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4449 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario cliente@mail.com como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4551 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario ClienteMayus como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4298 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario cliente_ñ como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4468 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user000 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4111 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user001 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4447 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user002 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5770 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user003 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5345 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user004 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5661 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario vendedor_con_guion como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4814 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario vendedor.con.punto como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>19415 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario vendedor@mail.com como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5242 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario VendedorMayus como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4679 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario vendedor_ñ como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4858 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user005 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4132 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user006 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>19695 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user007 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5094 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user008 como administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4774 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS crear usuario user009 como usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4441 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol a administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5724 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol a usuario normal</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5410 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol dos veces</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5536 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol sin tocar username</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5396 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol sin tocar password</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5556 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol con username existente</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5551 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol con username nuevo</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5333 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol con password nuevo</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5296 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol con username y password nuevos</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5832 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol dejando password vacío</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5468 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario con guion bajo</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5652 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario con punto</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5474 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario con arroba</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5304 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario en mayúsculas</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5319 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario con acentos</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5260 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario numérico</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5189 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario de un carácter</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5330 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario de dos caracteres</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4976 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario de tres caracteres</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5915 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario largo</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5091 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol tras recargar la página</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5058 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol tras navegar a guitarras</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5131 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol dos veces seguidas</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5132 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol tras crear otro usuario</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5123 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol tras eliminar otro usuario</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5170 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario con contraseña larga</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5120 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario con contraseña numérica</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5084 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario con contraseña mixta</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5348 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario con contraseña con símbolos</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5142 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS editar usuario cambiar rol de usuario con contraseña con guion bajo</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4941 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario recién creado</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5093 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario no administrador</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4857 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario con guion bajo</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4882 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario con punto</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4970 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario con arroba</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4848 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario en mayúsculas</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5150 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario con acentos</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5064 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario numérico</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5044 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario de un carácter</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5092 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario de dos caracteres</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5122 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario de tres caracteres</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4992 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario largo</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5379 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario creado tras otro</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4927 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario creado antes de otro</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5010 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario tras recargar la página</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4870 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario tras navegar a guitarras</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4917 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario con contraseña larga</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5193 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario con contraseña numérica</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4977 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario con contraseña mixta</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5025 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>USERS eliminar usuario con contraseña con símbolos</td>
+                <td>tests.spec.ts &gt; USERS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4631 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin marca con todos los campos vacíos</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2921 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin marca con modelo y precio llenos</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2828 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin marca con solo precio lleno</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2817 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin marca con solo modelo lleno</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2781 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin marca con marca vacía tras escribir y borrar</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2879 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin marca con marca con solo espacios</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2814 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin marca con marca con tabulación</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3063 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin marca con marca con salto de línea</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3288 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin marca con marca con emoji</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3186 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin marca con marca con números</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3004 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin modelo con marca llena y precio vacío</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3010 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin modelo con marca y precio llenos pero modelo vacío</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3351 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin modelo con modelo con solo espacios</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3333 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin modelo con modelo con tabulación</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3312 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin modelo con modelo con salto de línea</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3214 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin modelo con modelo con emoji</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3117 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin modelo con modelo con números</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3529 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin modelo con modelo que se borra tras escribir</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3905 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin modelo con modelo de solo un carácter</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3188 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra sin modelo con modelo de 100 caracteres</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3060 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con acentos españoles</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3702 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con ampersand</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3484 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con apóstrofe</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3854 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con paréntesis</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3614 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con numeral</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3556 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con diéresis</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3065 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con eñe</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2813 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con acento agudo</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3508 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con acento grave</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3404 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con circunflejo</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3182 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con tilde</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3429 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con cedilla</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3263 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con guion</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3187 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con guion bajo</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3202 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con punto</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3241 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con coma</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3269 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con punto y coma</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3048 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con dos puntos</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3348 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con signo de exclamación</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3380 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con signo de interrogación</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3441 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con comillas simples</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3329 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con comillas dobles</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3521 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con corchetes</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3453 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con llaves</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3429 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con barra vertical</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3394 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con asterisco</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3387 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con signo de porcentaje</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3194 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con signo de pesos</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3221 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con arroba</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3292 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra marca con almohadilla</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3236 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio 0.01 (mínimo válido)</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4041 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio 0.001 (sub-centavo)</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3907 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio 999.99</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3847 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio 1000.00</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3918 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio 999999.99</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3861 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio 1000000.00</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3996 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio 1.5</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4718 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio 1234.5678</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4690 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio -1 (negativo rechazado)</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4120 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio -100 (negativo rechazado)</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4070 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio 0 (rechazado)</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3989 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio 0.00 (rechazado)</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3983 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio muy pequeño</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3784 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio muy grande</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4002 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio con un decimal</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4001 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio con dos decimales</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3917 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio con cuatro decimales</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3894 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio entero</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4166 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio con coma en vez de punto</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3702 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>VALIDATIONS crear guitarra con precio que contiene letras</td>
+                <td>tests.spec.ts &gt; VALIDATIONS</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>3541 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 1 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4909 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 2 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4905 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 3 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4819 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 5 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4979 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 10 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5212 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 20 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>6098 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 30 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>6375 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 50 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>6909 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 75 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>8901 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 100 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>11212 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 150 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>12505 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES listar 200 guitarras correctamente</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>14659 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que el admin ve la pestaña Usuarios con un usuario administrador</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>10579 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que el admin ve la pestaña Usuarios con dos administradores</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2228 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que el admin ve la pestaña Usuarios con tres administradores</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2275 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que el admin ve la pestaña Usuarios con cinco administradores</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2267 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que el admin ve la pestaña Usuarios con diez administradores</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>2476 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con un vendedor</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5236 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con dos vendedores</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5210 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con tres vendedores</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5179 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con cinco vendedores</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5162 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con diez vendedores</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5335 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con vendedor que contiene guion bajo</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5301 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con vendedor que contiene punto</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5195 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con vendedor que contiene números</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5231 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con vendedor en mayúsculas</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5208 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES verificar que un usuario normal NO ve la pestaña Usuarios con vendedor que contiene acentos</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>5257 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES flujo completo: crear una guitarra y verificar que aparece</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4825 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES flujo completo: editar una guitarra y verificar el cambio</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4751 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES flujo completo: eliminar una guitarra y verificar que desaparece</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4693 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES flujo completo: crear dos guitarras y verificar que aparecen</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4472 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES flujo completo: crear y luego editar la misma guitarra</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4992 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES flujo completo: crear y luego eliminar la misma guitarra</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4548 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES flujo completo: crear y luego editar y luego eliminar</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4984 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES flujo completo: crear varias y eliminar una</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4652 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES flujo completo: crear varias y editar una</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4705 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+
+            <tr>
+                <td>EDGE_CASES flujo completo: crear varias y eliminar todas</td>
+                <td>tests.spec.ts &gt; EDGE_CASES</td>
+                <td>tests.spec.ts</td>
+                <td class="status passed">Aprobada</td>
+                <td>4639 ms</td>
+                <td class="error"></td>
+            </tr>
+            
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
