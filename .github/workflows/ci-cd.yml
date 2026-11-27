@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
 
+env:
+  OPENOBSERVE_URL: ${{ secrets.OPENOBSERVE_URL }}
+  OPENOBSERVE_AUTH: ${{ secrets.OPENOBSERVE_AUTH }}
+
 jobs:
   test-and-verify:
     runs-on: ubuntu-latest
@@ -26,20 +30,17 @@ jobs:
           pip install pytest httpx fpdf2
 
       - name: Ejecutar Pruebas de Backend (Pytest)
+        id: pytest
         run: |
           cd backend
-          pytest || true
+          set +e
+          pytest 2>&1 | tee "$GITHUB_WORKSPACE/pytest.log"
+          echo "exit=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
 
       - name: Generar Reportes de Backend (PDF y HTML)
         run: |
           cd backend
           python generate_report.py || echo "Generador backend omitido"
-
-      - name: Levantar servicios con Docker para Playwright
-        run: |
-          docker compose up --build -d
-          # Damos un momento para que los contenedores del backend y frontend estén arriba
-          sleep 15
 
       - name: Instalar dependencias del Frontend y Playwright
         run: |
@@ -48,9 +49,14 @@ jobs:
           npx playwright install --with-deps
 
       - name: Ejecutar Pruebas E2E (Playwright)
+        id: e2e
+        env:
+          BASE_URL: http://${{ secrets.EC2_HOST }}
         run: |
           cd frontend
-          npx playwright test || true
+          set +e
+          npx playwright test --reporter=list 2>&1 | tee "$GITHUB_WORKSPACE/playwright.log"
+          echo "exit=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
 
       - name: Generar Reportes de Frontend (PDF y HTML)
         run: |
@@ -67,43 +73,71 @@ jobs:
             frontend/frontend_report.pdf
             frontend/frontend_report.html
 
-      - name: Enviar reporte de estado a OpenObserve (RF-03)
+      - name: Enviar logs de pruebas a OpenObserve
         if: always()
         run: |
-          STATUS="SUCCESS"
-          if [ "${{ job.status }}" != "success" ]; then
-            STATUS="FAILED"
-          fi
-          curl --max-time 15 -X POST "${{ secrets.OPENOBSERVE_URL }}/api/default/cicd_pipeline/_json" \
-            -H "Content-Type: application/json" \
-            -H "Authorization: ${{ secrets.OPENOBSERVE_AUTH }}" \
-            -d "[{
-              \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\",
-              \"event\": \"TEST_SUITE_RUN\",
-              \"status\": \"$STATUS\",
-              \"commit\": \"${{ github.sha }}\",
-              \"branch\": \"${{ github.ref_name }}\",
-              \"user\": \"${{ github.actor }}\"
-            }]" || echo "No se pudo enviar a OpenObserve"
+          {
+            echo "RESUMEN DE PRUEBAS"
+            echo "Job: ${{ job.status }}"
+            echo "Pytest (backend) exit code: ${{ steps.pytest.outputs.exit || 'no se ejecuto' }}"
+            echo "Playwright (frontend) exit code: ${{ steps.e2e.outputs.exit || 'no se ejecuto' }}"
+          } > resumen.log
+          bash .github/scripts/send_oo.sh "resumen" "${{ job.status }}" resumen.log
+          bash .github/scripts/send_oo.sh "pytest-backend" "exit=${{ steps.pytest.outputs.exit }}" pytest.log
+          bash .github/scripts/send_oo.sh "playwright-frontend" "exit=${{ steps.e2e.outputs.exit }}" playwright.log
 
       - name: Bloquear despliegue si fallan pruebas (RF-02)
-        if: job.status != 'success'
-        run: exit 1
+        if: steps.pytest.outputs.exit != '0' || steps.e2e.outputs.exit != '0'
+        run: |
+          echo "Pruebas fallidas: pytest=${{ steps.pytest.outputs.exit }} playwright=${{ steps.e2e.outputs.exit }}"
+          exit 1
 
   deploy-to-ec2:
     needs: test-and-verify
     if: success()
     runs-on: ubuntu-latest
+    outputs:
+      log: ${{ steps.deploy.outputs.stdout }}
     steps:
       - name: Desplegar por SSH en AWS EC2
+        id: deploy
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           command_timeout: 20m
+          script_stop: true
+          capture_stdout: true
           script: |
             cd ~/guitar-store-app
             git pull origin main
             docker compose up --build -d
             docker image prune -f
+
+  report-deploy:
+    needs: [test-and-verify, deploy-to-ec2]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enviar resultado del despliegue a OpenObserve
+        env:
+          TESTS: ${{ needs.test-and-verify.result }}
+          DEPLOY: ${{ needs.deploy-to-ec2.result }}
+          DEPLOY_LOG: ${{ needs.deploy-to-ec2.outputs.log }}
+        run: |
+          {
+            echo "RESULTADO DEL DESPLIEGUE"
+            echo "Pruebas: $TESTS"
+            echo "Despliegue: $DEPLOY"
+            if [ "$DEPLOY" = "skipped" ]; then
+              echo "Motivo: no se desplego porque las pruebas fallaron"
+            elif [ "$DEPLOY" = "failure" ]; then
+              echo "Motivo: fallo el despliegue por SSH. Revisa el paso 'Desplegar por SSH' en: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            fi
+            echo "--- salida del servidor ---"
+            echo "$DEPLOY_LOG"
+          } > deploy.log
+          bash .github/scripts/send_oo.sh "despliegue" "$DEPLOY" deploy.log
