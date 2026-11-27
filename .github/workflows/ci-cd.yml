@@ -74,7 +74,7 @@ jobs:
           if [ "${{ job.status }}" != "success" ]; then
             STATUS="FAILED"
           fi
-          curl -X POST "${{ secrets.OPENOBSERVE_URL }}/api/default/cicd_pipeline/_json" \
+          curl --max-time 15 -X POST "${{ secrets.OPENOBSERVE_URL }}/api/default/cicd_pipeline/_json" \
             -H "Content-Type: application/json" \
             -H "Authorization: ${{ secrets.OPENOBSERVE_AUTH }}" \
             -d "[{
@@ -84,7 +84,7 @@ jobs:
               \"commit\": \"${{ github.sha }}\",
               \"branch\": \"${{ github.ref_name }}\",
               \"user\": \"${{ github.actor }}\"
-            }]"
+            }]" || echo "No se pudo enviar a OpenObserve"
 
       - name: Bloquear despliegue si fallan pruebas (RF-02)
         if: job.status != 'success'
@@ -101,7 +101,9 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
+          command_timeout: 20m
           script: |
             cd ~/guitar-store-app
             git pull origin main
             docker compose up --build -d
+            docker image prune -f
