@@ -250,7 +250,7 @@ function App() {
           <p className="auth-subtitle">
             {isRegistering
               ? "Crea tu cuenta para comenzar"
-              : "Bienvenido de nuevo"}
+              : "Bienvenido de nuevo UTEQiano, inicia sesión para continuar"}
           </p>
           <form onSubmit={isRegistering ? handleRegister : handleLogin}>
             <div className="field">
