@@ -46,12 +46,18 @@ jobs:
         run: |
           cd frontend
           npm install
-          npx playwright install --with-deps
+          npx playwright install --with-deps chromium
+
+      - name: Verificar que el EC2 responde
+        run: |
+          curl -sS --max-time 15 -o /dev/null -w "Front: %{http_code}\n" http://${{ secrets.EC2_HOST }}
+          curl -sS --max-time 15 -o /dev/null -w "Backend: %{http_code}\n" http://${{ secrets.EC2_HOST }}:8000/docs
 
       - name: Ejecutar Pruebas E2E (Playwright)
         id: e2e
         env:
           BASE_URL: http://${{ secrets.EC2_HOST }}
+          API_URL: http://${{ secrets.EC2_HOST }}:8000
         run: |
           cd frontend
           set +e
@@ -64,6 +70,7 @@ jobs:
           python generate_frontend_report.py || echo "Generador frontend omitido"
 
       - name: Subir Reportes como Artefactos en GitHub
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: reportes-de-pruebas-pdf-html
@@ -72,6 +79,7 @@ jobs:
             backend/reporte_pruebas.html
             frontend/frontend_report.pdf
             frontend/frontend_report.html
+          if-no-files-found: warn
 
       - name: Enviar logs de pruebas a OpenObserve
         if: always()

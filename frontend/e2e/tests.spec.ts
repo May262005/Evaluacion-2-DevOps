@@ -6,7 +6,7 @@
  */
 import { test, expect } from "@playwright/test";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "http://18.116.82.29:8000";
 
 // ============================================================
 // HELPERS
